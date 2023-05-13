@@ -27,22 +27,22 @@ function AddTodoForm({
   return (
     <form
       onSubmit={submitHandler}
-      className="flex xl:gap-4 lg:gap-3 md:gap-2 gap-1 items-center justify-center self-stretch xl:mx-40 lg:mx-28 md:mx-16 sm:mx-12 mx-8 "
+      className="flex xl:gap-4 lg:gap-3 md:gap-2 gap-1 items-center justify-center self-stretch xl:mx-20 lg:mx-16 md:mx-12 sm:mx-8 "
     >
-      <label htmlFor="todo-input" className="font-merri md:text-base text-sm">
+      <label htmlFor="todo-input" className="font-merri  text-sm">
         Add todos!
       </label>
       <input
         id="todo-input"
         type="text"
         placeholder="Do something...."
-        className="grow rounded-xl  p-4"
+        className="rounded-xl p-2 lg:p-4 grow "
         value={todo}
         onChange={inputChangeHandler}
       />
       <button
         disabled={todo === ""}
-        className="font-merri bg-white p-4 rounded-xl md:text-base text-sm hover:bg-black hover:text-white"
+        className="font-merri bg-white md:p-4 p-2  rounded-xl  text-sm hover:bg-black hover:text-white"
       >
         Add!
       </button>

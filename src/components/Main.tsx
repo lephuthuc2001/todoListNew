@@ -9,7 +9,7 @@ const lg = "lg:col-start-3 lg:col-end-9 lg:p-7 lg:gap-10 ";
 const md = "md:col-start-2 md:col-end-8 md:p-6 md:gap-8 ";
 const sm = "sm:col-start-2 sm:col-end-7 sm:p-5 sm:gap-6 ";
 const normal =
-  "col-span-4 flex flex-col p-4 justify-center items-center gap-4 bg-slate-300 rounded-[32px] max-h-[800px] ";
+  "col-span-4 flex flex-col md:p-4 p-2 justify-center items-center gap-4 bg-slate-300 rounded-[32px] max-h-[800px] ";
 
 const listInit = (): TodoItem[] => {
   const storedList = localStorage.getItem("list");
