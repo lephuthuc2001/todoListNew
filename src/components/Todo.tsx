@@ -7,7 +7,7 @@ import _ from "lodash";
 import { TodoContext, TodoHandler } from "./Main";
 
 function Todo({ todoItem }: { todoItem: TodoItem }): JSX.Element {
-  const todoHandler = useContext(TodoContext)!;
+  const todoHandler = useContext(TodoContext) as TodoHandler;
   return (
     <li className="flex flex-row justify-between">
       <div className="font-merri xl:text-base lg:text-sm text-xs">
