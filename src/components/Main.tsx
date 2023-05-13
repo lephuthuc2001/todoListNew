@@ -36,6 +36,7 @@ function Main(): JSX.Element {
 
   const removeTodoHandler = (id: string): void => {
     const newList = list.filter((todo) => todo.id !== id);
+    localStorage.setItem("list", JSON.stringify(newList));
     setList(newList);
   };
 
@@ -45,7 +46,8 @@ function Main(): JSX.Element {
     ) as TodoItem;
     updatedTodo.isDone = isDone;
     const newList = [...list];
-    console.log(newList);
+    localStorage.setItem("list", JSON.stringify(newList));
+
     setList(newList);
   };
   return (
