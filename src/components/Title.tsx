@@ -1,8 +1,6 @@
-import React from "react";
-
 function Title() {
   return (
-    <div className="font-gluten absolute top-8 text-center xl:text-6xl md:text-5xl  text-4xl w-full">
+    <div className="font-gluten font-extrabold text-center xl:text-6xl md:text-5xl text-4xl ">
       Todolist
     </div>
   );

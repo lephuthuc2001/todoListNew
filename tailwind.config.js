@@ -4,7 +4,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: { gluten: ['"Gluten"'] },
+      fontFamily: { gluten: ['"Gluten"'], merri: ['"Merriweather Sans"'] },
     },
   },
   plugins: [],
